@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>India - States and Union Territories</title>
+
+    <style>
+    .welcome {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 15px;
+}
+    nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: darkblue;
+}
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: blue;
+            color: white;
+        }
+        #searchBox {
+    width: 90%;
+    padding: 12px;
+    margin: 20px 0;
+    font-size: 18px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+    </style>
+
+</head>
+<script>
+function searchTable() {
+    let input = document.getElementById("searchBox");
+    let filter = input.value.toLowerCase();
+    let tables = document.getElementsByTagName("table");
+
+    for (let t = 0; t < tables.length; t++) {
+        let rows = tables[t].getElementsByTagName("tr");
+
+        for (let i = 1; i < rows.length; i++) {
+            let text = rows[i].innerText.toLowerCase();
+
+            if (text.includes(filter)) {
+                rows[i].style.display = "";
+            } else {
+                rows[i].style.display = "none";
+            }
+        }
+    }
+}
+</script>
+<body>
+    <div class="welcome">
+    <h1>🇮🇳 Welcome to India 🇮🇳</h1
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="Flag of India" width="300">>
+    
+    <p>Discover India, its States, Capitals, Languages and Union Territories.</p>
+</div>
+<nav>
+    <a href="#about">About India</a>
+    <a href="#states">States</a>
+    <a href="#union">Union Territories</a>
+</nav>
+<h1 id="about">🇮🇳 About India</h1>
+<h1 id="states">28 Indian States</h1>
+<h1 id="union">8 Union Territories of India</h1>
+    <!-- India के बारे में -->
+<input
+    type="text"
+    id="searchBox"
+    placeholder="Search State or Union Territory..."
+    onkeyup="searchTable()"
+>
+    <h1>🇮🇳 About India</h1>
+
+    <p>1. India is a country in South Asia.</p>
+    <p>2. The capital of India is New Delhi.</p>
+    <p>3. India is the world's most populous country.</p>
+    <p>4. India is a democratic republic.</p>
+    <p>5. India has 28 states and 8 union territories.</p>
+    <p>6. India has a rich history and culture.</p>
+    <p>7. Hindi and English are widely used languages in India.</p>
+    <p>8. India has many different languages and traditions.</p>
+    <p>9. The Indian national flag has three colors.</p>
+    <p>10. India is known for its diversity and unity.</p>
+
+
+    <!-- 28 States -->
+
+    <h1>28 Indian States</h1>
+
+    <table>
+        <tr>
+            <th>State</th>
+            <th>Capital</th>
+            <th>Language</th>
+        </tr>
+
+        <tr>
+            <td>Andhra Pradesh</td>
+            <td>Amaravati</td>
+            <td>Telugu</td>
+        </tr>
+
+        <tr>
+            <td>Arunachal Pradesh</td>
+            <td>Itanagar</td>
+            <td>English</td>
+        </tr>
+
+        <tr>
+            <td>Assam</td>
+            <td>Dispur</td>
+            <td>Assamese</td>
+        </tr>
+
+        <tr>
+            <td>Bihar</td>
+            <td>Patna</td>
+            <td>Hindi</td>
+        </tr>
+
+        <tr>
+            <td>Chhattisgarh</td>
+            <td>Raipur</td>
+            <td>Hindi</td>
+        </tr>
+
+        <tr>
+            <td>Goa</td>
+            <td>Panaji</td>
+            <td>Konkani</td>
+        </tr>
+
+        <tr>
+            <td>Gujarat</td>
+            <td>Gandhinagar</td>
+            <td>Gujarati</td>
+        </tr>
+
+        <tr>
+            <td>Haryana</td>
+            <td>Chandigarh</td>
+            <td>Hindi</td>
+        </tr>
+
+        <tr>
+            <td>Himachal Pradesh</td>
+            <td>Shimla</td>
+            <td>Hindi</td>
+        </tr>
+
+        <tr>
+            <td>Jharkhand</td>
+            <td>Ranchi</td>
+            <td>Hindi</td>
+        </tr>
+
+        <tr>
+            <td>Karnataka</td>
+            <td>Bengaluru</td>
+            <td>Kannada</td>
+        </tr>
+
+        <tr>
+            <td>Kerala</td>
+            <td>Thiruvananthapuram</td>
+            <td>Malayalam</td>
+        </tr>
+
+        <tr>
+            <td>Madhya Pradesh</td>
+            <td>Bhopal</td>
+            <td>Hindi</td>
+        </tr>
+
+        <tr>
+            <td>Maharashtra</td>
+            <td>Mumbai</td>
+            <td>Marathi</td>
+        </tr>
+
+        <tr>
+            <td>Manipur</td>
+            <td>Imphal</td>
+            <td>Meitei</td>
+        </tr>
+
+        <tr>
+            <td>Meghalaya</td>
+            <td>Shillong</td>
+            <td>English</td>
+        </tr>
+
+        <tr>
+            <td>Mizoram</td>
+            <td>Aizawl</td>
+            <td>Mizo</td>
+        </tr>
+
+        <tr>
+            <td>Nagaland</td>
+            <td>Kohima</td>
+            <td>English</td>
+        </tr>
+
+        <tr>
+            <td>Odisha</td>
+            <td>Bhubaneswar</td>
+            <td>Odia</td>
+        </tr>
+
+        <tr>
+            <td>Punjab</td>
+            <td>Chandigarh</td>
+            <td>Punjabi</td>
+        </tr>
+
+        <tr>
+            <td>Rajasthan</td>
+            <td>Jaipur</td>
+            <td>Hindi</td>
+        </tr>
+
+        <tr>
+            <td>Sikkim</td>
+            <td>Gangtok</td>
+            <td>Nepali</td>
+        </tr>
+
+        <tr>
+            <td>Tamil Nadu</td>
+            <td>Chennai</td>
+            <td>Tamil</td>
+        </tr>
+
+        <tr>
+            <td>Telangana</td>
+            <td>Hyderabad</td>
+            <td>Telugu</td>
+        </tr>
+
+        <tr>
+            <td>Tripura</td>
+            <td>Agartala</td>
+            <td>Bengali</td>
+        </tr>
+
+        <tr>
+            <td>Uttar Pradesh</td>
+            <td>Lucknow</td>
+            <td>Hindi</td>
+        </tr>
+
+        <tr>
+            <td>Uttarakhand</td>
+            <td>Dehradun</td>
+            <td>Hindi</td>
+        </tr>
+
+        <tr>
+            <td>West Bengal</td>
+            <td>Kolkata</td>
+            <td>Bengali</td>
+        </tr>
+
+    </table>
+
+
+    <!-- 8 Union Territories -->
+
+    <h1>8 Union Territories of India</h1>
+
+    <table>
+        <tr>
+            <th>Union Territory</th>
+            <th>Capital</th>
+            <th>Language</th>
+        </tr>
+
+        <tr>
+            <td>Andaman and Nicobar Islands</td>
+            <td>Port Blair</td>
+            <td>Hindi, English</td>
+        </tr>
+
+        <tr>
+            <td>Chandigarh</td>
+            <td>Chandigarh</td>
+            <td>Hindi, Punjabi, English</td>
+        </tr>
+
+        <tr>
+            <td>Dadra and Nagar Haveli and Daman and Diu</td>
+            <td>Daman</td>
+            <td>Gujarati, Hindi, English</td>
+        </tr>
+
+        <tr>
+            <td>Delhi</td>
+            <td>New Delhi</td>
+            <td>Hindi, English</td>
+        </tr>
+
+        <tr>
+            <td>Jammu and Kashmir</td>
+            <td>Srinagar (Summer), Jammu (Winter)</td>
+            <td>Urdu, Kashmiri, Hindi, English</td>
+        </tr>
+
+        <tr>
+            <td>Ladakh</td>
+            <td>Leh</td>
+            <td>Bhoti, Hindi, English</td>
+        </tr>
+
+        <tr>
+            <td>Lakshadweep</td>
+            <td>Kavaratti</td>
+            <td>Malayalam</td>
+        </tr>
+
+        <tr>
+            <td>Puducherry</td>
+            <td>Puducherry</td>
+            <td>Tamil, Telugu, Malayalam, English</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
